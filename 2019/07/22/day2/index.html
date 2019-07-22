@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>郁聪</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="yucong">
+  <meta name="keywords" content>
+  <meta name="description" content>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/main.css"> <link rel="stylesheet" href="/css/style.css"> <link rel="stylesheet" href="/css/menu.css"> 
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/jquery.jside.menu.js"></script>
+	<script>
+	$(document).ready(function(){
+	$(".menu-container").jSideMenu({
+	    jSidePosition: "position-right",
+	    jSideSticky: true,
+	    jSideSkin: "moonlit",
+	     });
+	}); 
+	</script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext">
+  
+</head>
+<body>
+<div class="single">
+<div id="page">
+<div id="lx-aside" style="background-image: url(/images/page-cover.jpg)" data-stellar-background-ratio="0.5">
+  <div class="overlay">
+  <div class="page-title">
+    <div class="avatar"><img src="/images/person_1.jpg"></div>
+    <span>2019-07-22</span>
+    <h2></h2>
+    
+  </div>
+</div>
+<div id="lx-main-content">
+  <div class="lx-post"> 
+    <div class="lx-entry padding">
+      <div>
+        <p>gzip:压缩</p>
+<p>gunzip：解压缩（g是开源协议）</p>
+<p>文件名.tar：归档文件</p>
+<p>tar -xvf 文件名1：解归档并且名字为文件名1</p>
+<p>1.包管理工具 - yum 需要连接到仓库，只能安装仓库中给的东西</p>
+<p>2.源代码构建安装  -  wegt 下载源代码</p>
+<ul>
+<li>解压缩和解归档（gunzip/xz -d；tar -xvf / tar -cvf0</li>
+<li>添加必要的依赖项 - yum</li>
+<li>构建前的配置 - configure —————&gt;Makefile</li>
+<li>构建和安装 - mark &amp;&amp; make install</li>
+<li>配置必须的环境变量 -export / 修改配置文件</li>
+</ul>
+<p>pip是python的包管理工具</p>
+<ol>
+<li>安装编译Python源代码的依赖项</li>
+</ol>
+<p>yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel libdb4-devel libpcap-devel xz-devel libffi-devel</p>
+<p>2.安装前的配置</p>
+<p>./configure –prefix=/usr/local/python37 –enable-optimizations</p>
+<p>3.构建和安装</p>
+<p>make &amp;&amp; make install</p>
+<p>4.注册环境变量（临时）</p>
+<p>export PATH=$PATH:/usr/local/python37/bin</p>
+<ol start="5">
+<li>给python3做一个快捷方式（符号链接/软链接）</li>
+</ol>
+<p>ln -s /usr/local/python37/bin/python3 /usr/bin/python3</p>
+<p>wc 文件名：（统计文件内的行数，单词，字符数量）</p>
+<p>-l –行数</p>
+<p>-w —-单词数</p>
+<p>-c —-字符数</p>
+<p>echo：回声</p>
+<p>1.&gt;输出重定项 ，覆盖旧的内容         </p>
+<p>2.&gt;&gt;追加重定项，在旧的内容后面加新的内容</p>
+<p>3.&lt;输入重定项</p>
+<p>uniq（唯一的）+文件名：去重效果，相邻的内容去重/-c 去重并统计</p>
+<p>sort+文件名：排序/ -r 反向排序</p>
+<p>cat -n fruit.txt | tr ‘a ‘ ‘@’:将fruit中的a换为@</p>
+<p>cut:剪切cut -b 2-4：剪切2-4个字符</p>
+<p>split -l 100 文件名：每100行都要拆分</p>
+<p>iconv：转换编码–iconv -f gb2312 -t utf-8 qq.html &gt; qq2.html—-将qq.html的gb2312转换成utf-8</p>
+<p>2&gt;error.txt—-如果有错就放入error.txt中，不在终端显示</p>
+<p>2&gt;&gt;error.txt——-错误追加重定项</p>
+<p>ln快捷放肆-s 符号链接/软链接ln -s /usr/local/python37 /usr/bin/python3</p>
+<p>alias rm=‘rm -f’别名</p>
+<p>unalias取消别名</p>
+<p>ln 建硬链接，作为备份</p>
+<p>版本控制工具 - git</p>
+<p>git-scm.com</p>
+<p>redis.io</p>
+<p>yum:search <name> - 收索仓库中的软件包</name></p>
+<p>yum -y install <name1> <name2> -安装软件包</name2></name1></p>
+<p>yum upgrade <name1> -更新软件</name1></p>
+<p>yum remove（erase）<name>-删除软件</name></p>
+<p>yum update -更新所有的包</p>
+<p>yum list installed —查看已经安装过的软件</p>
+<p>yum info –查看软件包的信息</p>
+<p>systenctl start nginx——-开始</p>
+<p>systemctl restart nginx——-重启</p>
+<p>systemctl stop nginx—-停止</p>
+<p>systemctl enable nginx—-开启自启</p>
+<p>systemctl disable nginx—–禁用开机自启</p>
+<p>vim - 文本编辑器 - visuaal editor modified</p>
+<p>命令模式 - 案件都是对应的命令</p>
+<p>编辑模式 - 可以编辑内容的模式</p>
+<p>末行模式 - 可以键入命令配置vim</p>
+<p>hjkl左下上右</p>
+<p>ctrl+e：一行一行往下移动</p>
+<p>ctrl+y：一行一行往下移动</p>
+<p>ctrl+f：一页页往下翻</p>
+<p>ctrl+b：一页页往上翻</p>
+<p>0是移到行首</p>
+<p>$是移到行尾</p>
+<p>dd删一行d0是光标到行首</p>
+<p>d$是删除光标到行尾</p>
+<p>dw是一个单词的删除</p>
+<p>yy复制</p>
+<p>p是黏贴</p>
+<p>touch .vimrc</p>
+<p>set nu—set ts=4—set autoindent——set expandtab———–syntax on ———set ruler</p>
+<p>作业：</p>
+<p>工资结算系统经理：12000，程序员：200/小时，销售：1800+5%销售额提成</p>
+
+      </div>
+    </div>		
+  </div>
+</div>
+<div class="lx-navigation">
+	<div class="lx-cover prev lx-cover-sm" style="background-image: url(/images/footer_1.jpg)">
+		<div class="overlay"></div>
+		<a class="copy" href="/2019/07/22/day1/">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Next</span>
+						<h3></h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+        <div class="lx-cover next lx-cover-sm" style="background-image: url(/images/footer_2.jpg)">
+		<div class="overlay"></div>
+		<a class="copy" href="/2019/07/19/hello-world/">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Prev</span>
+						<h3>Hello World</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
+</div>
+
+<footer>
+  <div>
+  Copyright &copy; 2019.<a href="/">郁聪</a><br>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme <a href="https://lx.blleng.cn" target="_blank">Lx</a><br>
+  </div>
+</footer>
+</div>
+<button class="menu-trigger"></button>
+  <div class="menu">
+	<div class="menu-head">
+	   <span class="layer">
+	<div class="col">
+	  <div class="row for-pic">
+	   <div class="profile-pic">     
+	   <img src="/images/person_1.jpg" alt="Asif Mughal"> 
+	         </div>
+	  </div>
+	         <div class="row for-name">
+	         <p>yucong</p>
+	        <span class="tagline">Hello, World!</span>
+	          </div>
+	         </div> 
+	  </span>
+	</div>
+	<nav class="menu-container">
+	<ul class="menu-items">
+	<li><span class="item-icon"><i class="fa fa-home"></i></span> <a href="/">首页</a></li>
+  <li><span class="item-icon"><i class="fa fa-archive"></i></span> <a href="/archives/">归档</a></li> 
+	<li class="has-sub"> <span class="item-icon"> <i class="fa fa-bookmark"></i> </span>
+	<span class="dropdown-heading">页面</span><ul>
+   <li> <a href="/guestbook">留言</a></li><li> <a href="/about">关于</a></li>
+	  </ul>
+	 </li>
+    <li class="has-sub"> <span class="item-icon"> <i class="fa fa-link"></i> </span>
+	 <span class="dropdown-heading">友链</span><ul>
+   <li> <a href="https://lx.blleng.cn" target="_blank">Theme-Lx</a></li>
+	  </ul>
+	 </li>
+	</ul>
+	</nav>
+  </div>
+<div class="gototop js-top">
+  <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+</div>
+
+
+<script src="/js/jquery.easing.min.js"></script>
+<script src="/js/jquery.waypoints.min.js"></script>
+<script src="/js/jquery.stellar.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+</div></body>
+</html>
